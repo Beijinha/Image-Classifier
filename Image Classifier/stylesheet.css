@@ -1,0 +1,102 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Heading Style */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Video Styling */
+video#webcam {
+    border: 5px solid #000000;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Console Div Styling */
+#console {
+    width: 80%;
+    max-width: 600px;
+    height: 100px;
+    margin: 20px auto;
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow-y: auto;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+    color: #e0e0e0;
+}
+
+/* Button Container */
+button {
+    background-color: #000000;
+    color: #e0e0e0;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #333333;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #1e1e1e;
+    transform: scale(0.95);
+}
+
+/* Align Buttons Horizontally */
+button {
+    display: inline-block;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjust spacing between buttons */
+}
+
+/* Add some responsiveness */
+@media (max-width: 768px) {
+    video#webcam {
+        width: 100%;
+        height: auto;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    #button-container {
+        flex-wrap: wrap; /* Stack buttons on smaller screens */
+    }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+        <link rel="stylesheet" href="stylesheet.css"/>
+        <title>Image Classifier</title>
+    </head>
+    <body>  
+        <h1>Image Classifier</h1>
+        <div id="console"></div>
+        <video autoplay
+        playsinline
+        muted
+        id="webcam"
+        width="400"
+        height="400"
+        ></video>
+
+        <div id="button-container">
+            <button id="dog">Add Dog</button>
+            <button id="cat">Add Cat</button>
+            <button id="snake">Add Snake</button>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
